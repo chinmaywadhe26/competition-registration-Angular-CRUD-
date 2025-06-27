@@ -1,0 +1,102 @@
+  .competition-wrapper {
+  padding: 20px;
+  min-height: calc(100vh - 120px); /* Adjust if your header + footer total height differs */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+} 
+.btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
+}
+
+
+.edit {
+  background-color: #ffc107; /* yellow */
+  color: #000;
+}
+
+.delete {
+  background-color: #dc3545; /* red */
+  color: white;
+}
+
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .table-section {
+      flex: 1;
+      padding: 20px;
+      border-right: 1px solid #ccc;
+      overflow-y: auto;
+    }
+
+    .form-section {
+      flex: 1;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 10px 0 5px;
+    }
+
+    input, textarea, select {
+      padding: 8px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
