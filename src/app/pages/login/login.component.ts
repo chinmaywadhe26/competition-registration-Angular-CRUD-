@@ -25,6 +25,7 @@ export class LoginComponent {
         localStorage.setItem("loggedUser", JSON.stringify(res));
         this.router.navigateByUrl("/home");
         this.userService.loggedUserId = res.userId;
+        this.userService.loggedUserData = res;
         alert("Login successs");
       },
       error:()=>{

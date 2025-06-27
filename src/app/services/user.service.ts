@@ -8,10 +8,13 @@ import { Observable } from 'rxjs';
 
 export class UserService {
   loggedUserId: string = "";
+  loggedUserData: any = undefined;
   constructor(private http:HttpClient){
     const loggedData = localStorage.getItem("studentId");
-    if(loggedData){
+    const loggedUserData = localStorage.getItem("loggedUser");
+    if(loggedData && loggedUserData){
       this.loggedUserId = loggedData
+      this.loggedUserData = JSON.parse(loggedUserData);
     }
    }
      onUserLogin(obj: any){
